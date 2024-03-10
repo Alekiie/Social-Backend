@@ -4,7 +4,7 @@ import swaggerUi from 'swagger-ui-express';
 import cors from 'cors';
 
 import { InputError, AccessError, } from './error';
-import { BACKEND_PORT } from '../../frontend/src/config';
+import { BACKEND_PORT } from './config.js';
 import swaggerDocument from '../swagger.json';
 import {
   save,
