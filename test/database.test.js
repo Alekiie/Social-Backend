@@ -4,7 +4,6 @@ import { reset } from '../src/service';
 
 const IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==';
 
-
 const postTry = async (path, status, payload, token) => sendTry('post', path, status, payload, token);
 const getTry = async (path, status, payload, token) => sendTry('get', path, status, payload, token);
 const deleteTry = async (path, status, payload, token) => sendTry('delete', path, status, payload, token);
@@ -80,22 +79,21 @@ describe('Resetting database', () => {
       }, await globals.ret1.token);
       const threadId2 = t2.id;
 
-
       const c1 = await postTry(`/comment`, 200, {
-        threadId: t1,
-        parentCommendId: null,
+        threadId: threadId1,
+        parentCommentId: null,
         content: 'I like fries but I dont have any right now rip',
       }, await globals.ret2.token);
 
       const c2 = await postTry(`/comment`, 200, {
-        threadId: t1,
-        parentCommendId: null,
+        threadId: threadId1,
+        parentCommentId: null,
         content: 'I also have fries but only soggy ones'
       }, await globals.ret2.token);
 
       const c3 = await postTry(`/comment`, 200, {
-        threadId: t1,
-        parentCommendId: c1.id,
+        threadId: threadId1,
+        parentCommentId: c1.id,
         content: 'Sweet I\'ll take that'
       }, await globals.ret1.token);
       

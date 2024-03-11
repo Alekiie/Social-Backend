@@ -423,17 +423,29 @@ describe('Thread post tests', () => {
 
     it('correctly paginate for an admin', async () => {
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
 
       let threads = null;
 
@@ -489,17 +501,29 @@ describe('Thread post tests', () => {
 
     it('correctly paginate for an owner of private', async () => {
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret2.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
 
       let threads = null;
 
@@ -555,17 +579,29 @@ describe('Thread post tests', () => {
 
     it('correctly paginate for an non-owner of the threads', async () => {
       await postTry(`/thread`, 200, THREAD1, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD1, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD2, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
       await postTry(`/thread`, 200, THREAD3, await globals.ret3.token);
+      await new Promise((resolve, reject) => setTimeout(resolve, 100));
 
       let threads = null;
 
