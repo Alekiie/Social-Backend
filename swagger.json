@@ -345,6 +345,15 @@
         }
       },
       "ThreadId": {
+        "name": "id",
+        "in": "query",
+        "description": "ThreadId",
+        "required": true,
+        "schema": {
+          "$ref": "#/components/schemas/ThreadId"
+        }
+      },
+      "CommentThreadId": {
         "name": "threadId",
         "in": "query",
         "description": "ThreadId",
@@ -796,7 +805,7 @@
         "description": "Get all comments and details for a thread",
         "parameters": [
           {
-            "$ref": "#/components/parameters/ThreadId"
+            "$ref": "#/components/parameters/CommentThreadId"
           }
         ],
         "responses": {
