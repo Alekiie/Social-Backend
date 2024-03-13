@@ -627,15 +627,11 @@
         ],
         "summary": "Get a thread's details",
         "description": "Get all of a thread's details",
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ThreadId"
-              }
-            }
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/ThreadId"
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK",
