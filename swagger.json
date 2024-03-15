@@ -1092,7 +1092,7 @@
                 "type": "object",
                 "properties": {
                   "email": {
-                    "$ref": "#/components/parameters/UserEmail"
+                    "$ref": "#/components/parameters/UserId"
                   },
                   "turnon": {
                     "$ref": "#/components/schemas/TurnOn"
