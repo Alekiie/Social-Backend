@@ -248,9 +248,6 @@
         "type": "object",
         "description": "Details relating to the creating of a comment",
         "properties": {
-          "id": {
-            "$ref": "#/components/schemas/CommentId"
-          },
           "content": {
             "$ref": "#/components/schemas/CommentContent"
           },
