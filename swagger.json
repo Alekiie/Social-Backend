@@ -1089,7 +1089,7 @@
                 "type": "object",
                 "properties": {
                   "userId": {
-                    "$ref": "#/components/parameters/UserId"
+                    "$ref": "#/components/schemas/UserId"
                   },
                   "turnon": {
                     "$ref": "#/components/schemas/TurnOn"
