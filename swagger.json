@@ -1088,7 +1088,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "email": {
+                  "userId": {
                     "$ref": "#/components/parameters/UserId"
                   },
                   "turnon": {
