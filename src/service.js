@@ -99,6 +99,7 @@ export const login = (email, password) => dataLock((resolve, reject) => {
       token: jwt.sign({ userId, }, JWT_SECRET, { algorithm: 'HS256', }),
       userId: parseInt(userId, 10),
     });
+    console.log("You are now logged in...")
   }
   reject(new InputError(`Invalid email ${email} or password ${password}`));
 });

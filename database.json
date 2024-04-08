@@ -23,6 +23,20 @@
       "image": null,
       "admin": true,
       "threadsWatching": []
+    },
+    "68316": {
+      "email": "comcomm@gmail.com",
+      "name": "comm comm",
+      "password": "1234",
+      "image": null,
+      "admin": false
+    },
+    "91990": {
+      "email": "comm@gmail.com",
+      "name": "comm",
+      "password": "1234",
+      "image": null,
+      "admin": false
     }
   },
   "threads": {

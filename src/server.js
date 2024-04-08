@@ -73,6 +73,8 @@ const authed = fn => async (req, res) => {
 app.post('/auth/login', catchErrors(async (req, res) => {
   const { email, password, } = req.body;
   return res.json(await login(email, password));
+  console.log("You are now logged in...")
+  
 }));
 
 app.post('/auth/register', catchErrors(async (req, res) => {
