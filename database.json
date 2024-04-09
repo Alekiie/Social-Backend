@@ -1,76 +1,59 @@
 {
   "users": {
-    "35546": {
+    "77358": {
       "email": "james@email.com",
       "name": "James",
       "password": "betty",
       "image": null,
-      "admin": false,
-      "threadsWatching": []
+      "admin": false
     },
-    "39686": {
-      "email": "augustine@email.com",
-      "name": "Augustine",
-      "password": "august",
-      "image": null,
-      "admin": false,
-      "threadsWatching": []
-    },
-    "61421": {
+    "78159": {
       "email": "betty@email.com",
       "name": "Betty",
       "password": "cardigan",
       "image": null,
-      "admin": true,
-      "threadsWatching": []
+      "admin": true
     },
-    "68316": {
-      "email": "comcomm@gmail.com",
-      "name": "comm comm",
-      "password": "1234",
-      "image": null,
-      "admin": false
-    },
-    "91990": {
-      "email": "comm@gmail.com",
-      "name": "comm",
-      "password": "1234",
+    "91746": {
+      "email": "augustine@email.com",
+      "name": "Augustine",
+      "password": "august",
       "image": null,
       "admin": false
     }
   },
   "threads": {
-    "747830": {
-      "id": 747830,
-      "creatorId": 61421,
+    "410282": {
+      "id": 410282,
+      "creatorId": 78159,
       "title": "Why am I so awesome?",
       "isPublic": false,
       "content": "V confused why I'm so remarkable",
       "lock": false,
-      "createdAt": "2024-02-06T21:20:15.369Z",
+      "createdAt": "2024-04-09T08:22:53.172Z",
       "likes": {},
       "watchees": {}
     },
-    "808403": {
-      "id": 808403,
-      "creatorId": 61421,
+    "435365": {
+      "id": 435365,
+      "creatorId": 78159,
       "title": "Where are my fries?",
       "isPublic": true,
       "content": "I like fries but I dont have any right now rip",
       "lock": false,
-      "createdAt": "2024-02-06T21:20:15.363Z",
+      "createdAt": "2024-04-09T08:22:53.167Z",
       "likes": {},
       "watchees": {}
     }
   },
   "comments": {
-    "321911": {
-      "id": 321911,
-      "creatorId": 39686,
-      "threadId": 808403,
+    "837043": {
+      "id": 837043,
+      "creatorId": 91746,
+      "threadId": 435365,
       "parentCommentId": null,
       "content": "testing testing",
-      "createdAt": "2024-02-06T21:20:15.376Z",
+      "createdAt": "2024-04-09T08:22:53.177Z",
       "likes": {}
     }
   }
